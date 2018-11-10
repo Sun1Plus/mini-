@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>90</y>
+      <w>189</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>Server
+--
++ time:TIME
+- user_list:list
+- group_list:list
+- online_user_list:list
+- user_record_list:list
+- user_friends_list:list
+
+--
+- Validate()
++ Message_Transfor()
+- Message_Storage
+- Add_User()
+- Add_Friend()
+- Add_Group()
+- Delete_User()
+- Delete_Group()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>90</y>
+      <w>207</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>Client
+--
++ IP_address:int
+
+--
++ Logup()
++ Login()
++ Logout()
++ Recieve_Message()
++ Send_Message()
++ Show_Message()
++ Apply_Group()
++ Apply_Connection()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>378</y>
+      <w>189</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Interface
+--
++ module_list:list
++ long:float
++ height:float
++ button:int
+
+--
++ Show()
++ Draft()
++ Recieve_click()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>198</x>
+      <y>81</y>
+      <w>189</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>User
+--
++ user_id:int 
++ user_account:string
++ user_keyword:string
++ user_name:string
++ friends_list:user
+
+--
++ Click()
++ Speak()
++ Send()
++ Add_friend
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>162</y>
+      <w>180</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>270</y>
+      <w>36</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=4</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>738</x>
+      <y>153</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>522</y>
+      <w>369</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>390.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>171</x>
+      <y>648</y>
+      <w>189</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Logup Interface
+--
++ module_list:list
++ long:float
++ height:float
++ button:int
+
+--
++ Show()
++ Draft()
++ Recieve_click()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>423</x>
+      <y>648</y>
+      <w>189</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Login Interface
+--
++ module_list:list
++ long:float
++ height:float
++ button:int
+
+--
++ Show()
++ Draft()
++ Recieve_click()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>918</x>
+      <y>648</y>
+      <w>189</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Groupchat Interface
+--
++ module_list:list
++ long:float
++ height:float
++ button:int
+
+--
++ Show()
++ Draft()
++ Recieve_click()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>648</y>
+      <w>189</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Friendchat Interface
+--
++ module_list:list
++ long:float
++ height:float
++ button:int
+
+--
++ Show()
++ Draft()
++ Recieve_click()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>522</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>522</y>
+      <w>126</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>657</x>
+      <y>522</y>
+      <w>378</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;400.0;140.0</additional_attributes>
+  </element>
+</diagram>
